@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+    crossorigin="anonymous">
+  <!-- CSS files -->
+  <!-- Local CSS files -->
+  <link rel="stylesheet" href="CSS\main.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"><!-- Tiina added awesome -->
+  <link rel="stylesheet" href="CSS\Contact.css">  <!-- Tiina -->
+
+  <title>Login</title>
+</head>
+
+<body>
+
+  <header>
+    <!-- Begin Navbar -->
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+        <div class="navbar-brand">Online <em><text style=color:#52DBFF>Examinations</em></div>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar6">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="navbar-collapse collapse justify-content-stretch" id="navbar6">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">HOME</a>
+                </li>
+            </ul>
+            <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                    <a class="nav-link" href="AboutUs.html">ABOUT US</a><!-- Tiina added href -->
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="register.html">REGISTER</a><!-- Tiina added href -->
+                </li>
+                   <li class="nav-item">
+                   <a class="nav-link" href="login.html">LOG IN</a><!-- Tiina added href -->
+                </li>
+            <li class="contact-us"><!-- Tiina designed -->
+                <a class="active" href="Contact.html"><i class="fa fa-envelope-o" style="color:white"></i>CONTACT</a></li><!-- Tiina added -->
+            </li>
+            </ul>
+        </div>
+    </nav>
+    <!-- End Navbar -->
+  </header>
+
+
+
+  <div class="ColorH1"><h1>Get recognized as an expert in your profession!</h1></div>
+<!-- Tiina added example-->
+  <li>
+    <div class="MainQuestion">1. An offsite information processing facility having electrical wiring, air conditioning and flooring, but no computer or communications equipment is a:  
+    </div>
+    
+    <div class="A-Q">
+        <input type="radio" name="question-1-answers" id="GA-A" value="A" />
+        <label for="question-1-answers-A">A. cold site. </label>
+    </div>
+    
+    <div class="B-Q">
+        <input type="radio" name="question-1-answers" id="GA-B" value="B" />
+        <label for="question-1-answers-B">B. warm site.</label>
+    </div>
+    
+    <div class="C-Q">
+        <input type="radio" name="question-1-answers" id="GA-C" value="C" />
+        <label for="question-1-answers-C">C. dial-up site.</label>
+    </div>
+    
+    <div class="D-Q">
+        <input type="radio" name="question-1-answers" id="GA-D" value="D" />
+        <label for="question-1-answers-D">D. duplicate processing facility.</label>
+    </div>
+
+</li>
+<!-- Tiina - if person answers B,C and D, he should receive this message-->
+<div class="RightAnswer"><h1 id="AnswerColor">Right answer: A.</h1></div>
+<div class="container4">
+            
+    <div class="text-block3"> 
+      <div class="ColorP"><p>INCORRECT. Right Answer: A</p></div><!-- Tiina - it should pup up only if answer is incorrect-->
+      <p>Explanation:</p>
+      <p>A cold site is ready to receive equipment but does not offer any components at the site in advance of the need.</p>
+      </div>
+  </div>
+  <span>
+  <div class="text-block-4"> 
+    <div class="ColorP1"><p>CORRECT. Right Answer: A</p></div><!-- Tiina - it should pup up only if answer is correct-->
+    <p>Explanation:</p>
+    <p>A cold site is ready to receive equipment but does not offer any components at the site in advance of the need.</p>
+    </div>
+</div>
+  <!-- Tiina It's in the middle. Function should be - check, give answer (incorrect or correct). Person can after checking push next button and proceed with other question-->
+<button onclick="window.location=href='container4'" class="button button-block-1" ><h5>CHECK!</h5></button>
+<button onclick="window.location=href='NextQuestion'" class="button button-block-2" ><h5>NEXT!</h5></button>
+</span>
+
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
