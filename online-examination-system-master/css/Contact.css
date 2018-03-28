@@ -1,0 +1,355 @@
+/* Comment
+Tiina - blue button on nav bar */
+
+
+li a.active {
+  color: white;
+  background-color: #52DBFF;
+}
+
+li a.active {
+  display: block;
+  text-align: center;
+  padding: 8px 8px;
+  text-decoration: none;
+}
+
+li a.active:hover, .button:focus {
+  background: #33ABF0;
+}
+
+/*POOLELI */
+
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+
+input[type=submit] {
+    background-color: #52DBFF;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: 33ABF0;
+}
+
+/* Comment
+Tiina: this is "Contact Us" form" saab muuta boxi värvi sees - jätsin heledamaks, et saaks võrrelda registreerimise vormiga.  */
+.container1 {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+    width: 700px;
+   
+}
+
+/* Comment
+Tiina: look at "contuct us" and "register" forms - they have blue * */
+label .req {
+  margin: 2px;
+  color: #52DBFF;
+}
+
+/* Comment
+Tiina: back-ground is white. Do we need to change font? */
+body {
+  background: white;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Comment
+Tiina: h1 is allways same */
+h1 {
+  text-align: center;
+  color: #ffffff;
+  font-weight: 300;
+  margin: 0 0 40px;
+}
+
+/* Comment FAQ
+Tiina:panen p-le fondi. Vajadusel muudke suuremaks*/
+p {
+   font-size: 18px;
+}
+
+/* Comment
+Tiina: Contact form format - same as login form format. Do we wan't to change this format? */
+.form {
+  background: rgba(19, 35, 47, 0.9);
+  padding: 40px;
+  max-width: 800px;
+  margin: 40px auto;
+  border-radius: 4px;
+  -webkit-box-shadow: 0 4px 10px 4px rgba(19, 35, 47, 0.3);
+          box-shadow: 0 4px 10px 4px rgba(19, 35, 47, 0.3);
+}
+
+/* Comment
+Tiina - all buttons are blue and should change colour after hovering */
+.button {
+  border: 0;
+  outline: none;
+  border-radius: 0;
+  padding: 15px 0;
+  font-size: 2rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: .1em;
+  background: #52DBFF;
+  color: #ffffff;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  -webkit-appearance: none;
+  text-align: center;
+}
+.button:hover, .button:focus {
+  background: #33ABF0;
+}
+
+.button-block {
+  display: block;
+  width: 100%;
+}
+
+
+/* Comment
+Tiina - It's ok? */
+body, html {
+  height: 100%;
+  margin: 0;
+}
+
+
+  /* adding resized (less than 100%) cover image */
+.bg {
+  /* The image used */
+  background-image: url("https://scontent-arn2-1.xx.fbcdn.net/v/t31.0-8/29352222_1663750570379984_7651888964753740319_o.jpg?_nc_cat=0&oh=028fd78d8b0fb9a2004ae1f9572c3847&oe=5B713A7A");
+
+  /* Tiina - resizing the image */
+  height: 40%; 
+  width: 70%;
+
+  /* Tiina_setting margings to the image */
+  margin-top: 60px;
+  margin-bottom: 60px;
+  /* Center and scale the image nicely */
+  margin-left: 300px;/* For some reason after resizing image, i could not put it into the center. Therefore used margin */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+ 
+  }
+
+    /* Tiina_added scroll-bar.  */
+  html {
+    overflow-y: scroll;
+  }
+
+     /* Tiina_FQA questions form.  */
+ 
+#FAQ, #ShowText, #FAQ1, #ShowText1, #FAQ2, #ShowText2, #FAQ3, #ShowText3  {
+    padding: 5px;
+    background-color: white;
+    border: solid 1px #52DBFF;
+    max-width: 70%;
+}
+
+#FAQ, #FAQ1, #FAQ2, #FAQ3 {
+    padding: 50px;
+    display: none;
+}
+
+
+     /* Tiina. Placing Picture and text in file Index.html  */
+ .container3 {
+  position: relative;
+}
+
+/* Tiina. Placing Picture and text in file Index.html. It is a text box - invisible because is white */
+.text-block {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  background-color: white;
+  color: black;
+  padding-left: 20px;
+  padding-right: 20px;
+  max-width: 600px;
+  text-align: left;
+}
+
+/* Tiina. I need to change color in the box. It's an exeptional case.    */
+.ColorH1 h1 {
+  Color: black;
+  font-weight: 300;
+  margin: 0 0 40px;
+}
+
+  /* adding resized (less than 100%) cover image */
+  .bg2 {
+    /* The image used */
+    background-image: url("https://scontent-arn2-1.xx.fbcdn.net/v/t1.0-9/29597243_1663232050431836_1736628033898925348_n.jpg?_nc_cat=0&oh=8f680738073c6d22eb765546ec376abe&oe=5B74CAB8");
+  
+    /* Tiina - resizing the image */
+    height: 100%; 
+    width: 50%;
+      /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+   
+    }
+    /* Tiina - register html, text-block */
+    .text-block1 {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      background-color: white;
+      color: black;
+      padding-left: 20px;
+      padding-right: 80px;
+      max-width: 800px;
+      text-align: left;
+      margin-top: 60px;
+     
+     
+    }
+
+
+    /* Comment
+Tiina: I'm sure i could do it with one code but it did not work, so ...*/
+
+.A-Q {
+  padding: 5px;
+  background-color: white;
+  border: solid 1px #52DBFF;
+  max-width: 50%;
+  font-size: 18px;
+  text-align: left;
+  margin-left: 30px;
+}
+
+.B-Q {
+  padding: 5px;
+  background-color: white;
+  border: solid 1px #52DBFF;
+  max-width: 50%;
+  font-size: 18px;
+  text-align: left;
+  margin-left: 30px;
+}
+
+.C-Q {
+  padding: 5px;
+  background-color: white;
+  border: solid 1px #52DBFF;
+  max-width: 50%;
+  font-size: 18px;
+  text-align: left;
+  margin-left: 30px;
+}
+
+.D-Q {
+  padding: 5px;
+  background-color: white;
+  border: solid 1px #52DBFF;
+  max-width: 50%;
+  font-size: 18px;
+  text-align: left;
+  margin-left: 30px;
+}
+
+.MainQuestion {
+  padding: 5px;
+  background-color: white;
+  border: solid 1px #52DBFF;
+  max-width: 50%;
+  font-size: 18px;
+  text-align: left;
+  margin-left: 30px;
+}
+
+/* Tiina. if it's incorrect, then   */
+.ColorP {
+  Color: red;
+  font-weight: 300;
+ 
+}
+
+.text-block3 {
+  position: absolute;
+  top: 140px;
+  right: 500px;
+  background-color:white;
+  color: black;
+  padding-left: 20px;
+  padding-right: 20px;
+  max-width: 400px;
+  text-align: left;
+  border-style: solid;
+  border-color: red;
+}
+
+/* Tiina. if it's incorrect, then   */
+.ColorP1 {
+  Color: black;
+  font-weight: 300;
+ 
+}
+
+.text-block-4 {
+  position: absolute;
+  top: 140px;
+  right: 80px;
+  background-color:white;
+  color: black;
+  padding-left: 20px;
+  padding-right: 20px;
+  max-width: 400px;
+  text-align: left;
+  border-style: solid;
+  border-color: black;
+}
+
+/* Comment
+Tiina - all buttons are blue and should change colour after hovering */
+
+.button-block-1  {
+  position: absolute;
+  display: block;
+  width: 7%;
+  height: 5%;
+  left: 30px;
+  top: 420px;
+  padding-left: 20px;
+  padding-right: 20px;
+  font-size: 12px;
+  text-align: center;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+.button-block-2  {
+  position: absolute;
+  display: block;
+  width: 7%;
+  height: 5%;
+  right: 920px;
+  top: 420px;
+  padding-left: 20px;
+  padding-right: 20px;
+  font-size: 12px;
+  text-align: center;
+}
+
+
