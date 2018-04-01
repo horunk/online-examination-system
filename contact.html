@@ -16,7 +16,7 @@
 
 
 
-    <title>Online Examinations - Home</title>
+    <title>Online Examinations - Contact</title>
 </head>
 
 <body>
@@ -32,8 +32,8 @@
 
             <div class="collapse navbar-collapse" id="navbarColor02">
                 <ul class="navbar-nav mr-auto">
-                    <li class="nav-item active">
-                        <a class="nav-link " href="#">Home</a>
+                    <li class="nav-item">
+                        <a class="nav-link " href="index.html">Home</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="about.html">About</a>
@@ -44,7 +44,7 @@
                     <li class="nav-item">
                         <a class="nav-link" href="login_register.html">Log in / Register </a>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-item active">
                         <a class="nav-link" href="contact.html">Contact us </a>
                     </li>
                 </ul>
@@ -56,25 +56,46 @@
 
     <!-- Begin page content -->
     <main role="main" class="container">
+
+
+
         <div class="jumbotron-modified col-md-10 mx-auto">
-            <h3>Get recognized as an expert in your profession!</h3>
+            <h3>Contact us</h3>
+            <p>We are happy to receive any feedback and ideas from you!
+                <br> You can help us become better!</p>
         </div>
     </main>
 
     <div class="jumbotron-modified col-sm-8 mx-auto">
-        <h5>Log in to see available exams.</h5>
-        <p>With a globally recognized
-            <span>
-                <text style=color:#52DBFF>SPEC</span>,
-            <span>
-                <text style=color:#52DBFF>EXP</span>,
-            <span>
-                <text style=color:#52DBFF>PROF</span> certification, you hold the power to move ahead in your career, increase your earning potential
-            and add value to any enterprise.</p>
-        <p>To start exam, please
-            <a href="login_register.html">register and login</a>. You will be directed to the exam web-page.</p>
-    </div>
+        <form>
+            <br>
+            <fieldset>
+                <legend>Send your feedback or questions</legend>
 
+                <div class="form-group col">
+                    <label class="col-form-label" for="name">Name</label>
+                    <input class="form-control" placeholder="Name" id="name" type="text">
+                </div>
+
+                <div class="form-group col">
+                    <label for="exampleInputEmail1">Email address</label>
+                    <input class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email" type="email">
+                    <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                </div>
+
+                <div class="form-group col">
+                        <label for="feedbackText">Insert your feedback or questions here.</label>
+                        <textarea class="form-control" id="feedbackText" rows="5"></textarea>
+                      </div>
+
+                <div class="form-group col">
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                </div>
+            </fieldset>
+        </form>
+
+
+    </div>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
