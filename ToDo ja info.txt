@@ -14,7 +14,7 @@ TODO:
 1.
 Login_register lehe Register tab'ile võiks lisada "Password confirmation" lahtri, mis kontrolliks, kas kasutaja poolt teist korda sisestatud parool kattub esimesega.
 
-2. Luua eksami soorituse leheküljed näidisküsimustega, paar tk on ok.
+2. Luua eksami soorituse leheküljed näidisküsimustega, paar tk on ok. (hilisem mõte - pole mõtet eraldi eksami lehti teha - kuna me peame tegema veebiliidesesse küsimuste haldamise, siis kõik küsimused peavad olema andmebaasis ning eksami soorituseks ainult üks dünaamiline vorm (a'la võta andmebaasist 10 random küsimust ja kuva kasutajale))
 
 3.
 Siduda kupatus ära andmebaasiga ja hakata registreeritud kontosid salvestama andmebaasi.
