@@ -1,0 +1,68 @@
+* Lehekülg on tehtud Bootstrapi LUX teema peale, mida nibinnabin muudetud.
+
+Teema asub siin: https://bootswatch.com/lux/ 
+Kui hiirega hoverida mõne elemendi peal, siis tekib üles paremale nurka <> nupp, kust saab vastava ala koodi, kust saab sobiva osa oma lehele kopeerida.
+
+* Taustapilt on tehtud responsive'ks, et brauseri akna suuruse muutudes lehekülg endiselt korrektne oleks. Selle jaoks kasutatud seda: https://www.webpagefx.com/blog/web-design/responsive-background-image/
+   Vajalik on õige nimega pilt Images kaustas ja CSS kaustas ole responsive-full-background-image.css
+   (mobiilide jaoks oleks võimalik kasutusele võtta ka väiksemas mõõdus pilt, aga arvan, et meie praeguse projekti juures pole see oluline)
+
+* Mingit TODO punkti tegema hakates võiks luua Git'is uue Branch'i ning teha muudatused seal valmis, kui kõik muudatused on tehtud ja töötavad (vahepeal loomulikult saavad teised grupi liikmed ka aidata selle branchi sees) siis Mergeme tehtud muudatustega branchi master branchi. Seni kuni mingid osad ei toimi, ei peaks Masterisse neid panema.
+
+
+TODO:
+1.
+Login_register lehe Register tab'ile võiks lisada "Password confirmation" lahtri, mis kontrolliks, kas kasutaja poolt teist korda sisestatud parool kattub esimesega.
+
+2. Luua eksami soorituse leheküljed näidisküsimustega, paar tk on ok.
+
+3.
+Siduda kupatus ära andmebaasiga ja hakata registreeritud kontosid salvestama andmebaasi.
+
+4.
+Teha log in osa, mida me pole veel õppinud
+
+5. Mingile lehele lisada karusell bänner, äkki index lehele?
+https://getbootstrap.com/docs/4.0/components/carousel/
+
+6. About us lehele lisada projektikirjeldus
+
+7. FAQ osa, mis Tiina tehtud lehel on päris vahva - selle saaks ilmselt ka LUX teemaga teha, Bootstrapiga saab vastustele show/hide toggle lisada https://getbootstrap.com/docs/4.0/components/collapse/ , st eraldi importima midagi ei peaks
+
+
+
+------
+Task 6: Online Examination System
+Project Description:
+The Objective of this project is to develop a Online Examination system used to conduct online  examinations, display the result immediately and also store it in the database.
+Technologies:
+PHP, MYSQL, HTML, JAVASCRIPT and CSS
+Static Design:
+Homepage with UI.
+Homepage should contain slider for images banner.
+About us page should contain description about your project.
+Contact us page should contain a form.
+Modules
+1.    Instructor 
+2.    Student
+
+Instructor (Limited access)
+•    Registration/Login/Logout
+•    Forgot password
+•    Change password
+•    Edit profile
+•    Add questions 
+•    Update questions
+•    Create exams
+•    Update exams
+•    View  Exams (view number of registered students and attended students)        
+
+Student  (Limited access)
+•    Registration/Login/logout
+•    Forgot password
+•    Change password
+•    Edit profile
+•    Apply for examination (registered student allowed to start the exam)
+•    View examination results
+NOTE: View some other  similar sites for ideas on content and layout , including some functionalities
+
