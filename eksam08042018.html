@@ -1,0 +1,160 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- CSS files -->
+    <!-- Bootstrap CSS -->
+    <link href="bootstrap\bootstrap.css" rel="stylesheet">
+    <!-- local AND MODIFIED CSS theme from https://bootswatch.com/lux/ -->
+    <!-- Local CSS files -->
+    <link rel="stylesheet" href="CSS\responsive-full-background-image.css">
+    <!-- loads responsive background image https://www.webpagefx.com/blog/web-design/responsive-background-image/ -->
+
+
+
+
+    <title>Online Examinations - Login/Register</title>
+</head>
+
+<body>
+
+    <header>
+        <!-- Begin Navbar -->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <a class="navbar-brand" href="#">Online Examinations</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor02" aria-controls="navbarColor02"
+                aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarColor02">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item ">
+                        <a class="nav-link " href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                </ul>
+
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="login_register.html">Log in / Register </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact us </a>
+                    </li>
+                </ul>
+
+            </div>
+        </nav>
+        <!-- End Navbar -->
+    </header>
+      
+
+
+    <!-- Begin page content -->
+    <main role="main" class="container">
+        <div class="jumbotron-modified col-md-10 mx-auto">
+            <h3>Welcome to the exam</h3>
+            <p>Your computer screen has a built-in timer to let you know how much time remains as you progress through your exam. Plan your time wisely so you will have enough time to complete all questions.</p>
+        </div>
+    </main>
+    <!-- Exam question form -->
+       <div class="jumbotron-modified col-sm-8 mx-auto">
+        <form>
+            <br>
+            <fieldset>
+                <legend>Select the correct answer</legend>
+
+                <fieldset class="form-group">
+                    <p>1. An offsite information processing facility having electrical wiring, air conditioning and flooring, but no computer or communications equipment is a:</p>
+                    <div class="form-check">
+                      <label class="form-check-label">
+                        <input type="radio" class="form-check-input" name="optionsRadios" id="optionsRadios1" value="option1" checked="">
+                        A. cold site.
+                      </label>
+                    </div>
+                    <div class="form-check">
+                    <label class="form-check-label">
+                        <input type="radio" class="form-check-input" name="optionsRadios" id="optionsRadios2" value="option2" checked="">
+                        B. warm site.
+                      </label>
+                    </div>
+                    <div class="form-check">
+                       <label class="form-check-label">
+                        <input type="radio" class="form-check-input" name="optionsRadios" id="optionsRadios3" value="option3" checked="">
+                        C. dial-up site.
+                      </label>
+                     </div>
+                     <div class="form-check">
+                        <label class="form-check-label">
+                        <input type="radio" class="form-check-input" name="optionsRadios" id="optionsRadios4" value="option4" checked="">
+                        D. duplicate processing facility.
+                         </label>
+                      </div>
+                      <br>
+<!-- We need a new button "Check" (on the left)? -->
+                <div class="form-group col">
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                </div>
+
+ <!-- Contdown time -->               
+                <p id="hms">Time remaining</p>
+
+ <!-- We need a new button "Next" (on the right)? -->        
+                <div class="form-group col">
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                </div>
+            </fieldset>
+        </form>
+
+    </div>
+    
+ <!-- Should we add countdown time (where? between buttons)? --> 
+    <script>
+        // Set the date we're counting down to
+        var countDownDate = new Date("Sep 5, 2018 15:37:25").getTime();
+        
+        // Update the count down every 1 second
+        var x = setInterval(function() {
+        
+            // Get todays date and time
+            var now = new Date().getTime();
+            
+            // Find the time remaining between now an the count down date
+            var timeRemaining = countDownDate - now;
+            
+            // Time calculations for days, hours, minutes and seconds
+            var hours = Math.floor((timeRemaining % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            var minutes = Math.floor((timeRemaining % (1000 * 60 * 60)) / (1000 * 60));
+            var seconds = Math.floor((timeRemaining % (1000 * 60)) / 1000);
+            
+            // Output the result in an element with id="demo"
+            document.getElementById("hms").innerHTML = "Time remaining: " + hours + "h "
+            + minutes + "m " + seconds + "s ";
+            t
+            // If the count down is over, write some text (or we should use alert?)
+            if (timeRemaining <= 0) {
+                clearInterval(x);
+                document.getElementById("hms").innerHTML = "Time is up!";
+            }
+        }, 1000);
+        </script>
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
